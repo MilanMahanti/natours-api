@@ -1,19 +1,19 @@
-const { default: mongoose } = require('mongoose');
+const mongoose = require('mongoose');
 
 const bookingSchema = new mongoose.Schema({
   tour: {
     type: mongoose.Schema.ObjectId,
-    ref: 'tour',
-    required: [true, 'A booking must belong to a tour.'],
+    ref: 'Tour',
+    required: [true, 'Booking must belong to a Tour!'],
   },
   user: {
     type: mongoose.Schema.ObjectId,
-    ref: 'user',
-    required: [true, 'A booking must belong to an user.'],
+    ref: 'User',
+    required: [true, 'Booking must belong to a User!'],
   },
   price: {
     type: Number,
-    required: [true, 'A booking must have a price'],
+    require: [true, 'Booking must have a price.'],
   },
   createdAt: {
     type: Date,
@@ -34,4 +34,5 @@ bookingSchema.pre(/^find/, function (next) {
 });
 
 const Booking = mongoose.model('Booking', bookingSchema);
+
 module.exports = Booking;
