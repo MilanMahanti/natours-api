@@ -55,7 +55,7 @@ app.use(mongoSanitize());
 app.use(xss());
 
 app.use(cors());
-
+app.options('*', cors());
 // Prevent parameter pollution
 app.use(
   hpp({
