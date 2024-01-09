@@ -29,7 +29,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/MilanMahanti/natours-api"><strong>Explore the docs »</strong></a>
+    <a href="https://documenter.getpostman.com/view/31154118/2s9YsKfrQ9"><strong>Explore the API docs »</strong></a>
     <br />
     <br />
     <a href="https://natours-4rbr.onrender.com/">View Demo</a>
@@ -70,7 +70,7 @@
 
 
 Natours is a feature packed tours application with a complete backend. Where you can explore tours and also book them. It also handels all the CRUD operations like adding tours,updating tours,deleting tours. It uses Stripe for a secure booking.
-
+Explore the [API Docs](https://documenter.getpostman.com/view/31154118/2s9YsKfrQ9) to get all the information about the Natours API.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
